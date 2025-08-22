@@ -1,6 +1,3 @@
-Certainly! Here's a sample README.md file for your Employees Management System project:
-
-```markdown
 # Employees Management System (EMS)
 
 ![License](https://img.shields.io/badge/license-MIT-blue)
@@ -50,11 +47,8 @@ See the [LICENSE](LICENCE.txt) file for details.
 
 ## Contact
 
-For questions or support, please contact [Your Email or Contact Info].
+For questions or support, please contact marco.grecuccio@mgrtech.eu
 
 ---
 
 **Note:** This project is a frontend-only implementation intended for learning and demonstration purposes.
-```
-
-Would you like me to customize this further or add specific details?
