@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dash</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css">
+    <style>
+        .brand-gradiant{
+            background: #00a3d7; /* fallback for old browsers */
+            background: -webkit-linear-gradient(to top, #00a3d7, #96d35f); /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to top, #00a3d7, #96d35f); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+         }
+         .vr{
+            color: white;
+         }  
+    </style>
+</head>
+<body class="bg-white">
+
+<!-- Nav-->
+<nav class="navbar navbar-dark navbar-expand-lg bg-dark shadow small mb-3">
+    <div class="container-fluid">
+        <a href="dash.html" class="navbar-brand">
+            <span class="brand-gradiant">EMS</span>
+        </a>
+        <button
+            class="navbar-toggler border-0"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbar-supported-content"
+            aria-controls="navbar-supported-content"
+            aria-expanded="false"
+            aria-label="Toggle Navigation">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+            </svg>
+        </button>
+        <div class="collapse navbar-collapse" id="navbar-supported-content">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="list-item">
+                    <a class="nav-link" aria-current="page" href="dash.html">Home</a>
+                </li>
+                <li class="list-item">
+                    <a class="nav-link active" aria-current="page" href="employees-list.html">Employees</a>
+                </li>
+                <li class="list-item">
+                    <a class="nav-link" href="#">Jobs</a>
+                </li>
+            </ul>
+            <form class="d-flex" role="search">
+                <div class="hstack gap-3 me-3">
+                    <input class="form-control form-control-sm me-auto" type="search" placeholder="Sarch for..." aria-label="Search for...">
+                    <button type="submit" class="btn btn-sm btn-success">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                         <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+                        </svg>
+                    </button>                   
+                </div>
+                <div class="vr"></div>
+                <a href="index.html" class="btn btn-sm btn-warning ms-3">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-power" viewBox="0 0 16 16">
+                        <path d="M7.5 1v7h1V1z"/>
+                        <path d="M3 8.812a5 5 0 0 1 2.578-4.375l-.485-.874A6 6 0 1 0 11 3.616l-.501.865A5 5 0 1 1 3 8.812"/>
+                    </svg>
+                </a>
+            </form>
+        </div>
+    </div>
+</nav>
+<!-- Nav-->
+
+<!-- Employees Data -->
+ <div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-2">
+            <div class="list-group shadow-sm small mb-3">
+                <div class="list-group-item active">Employees Data</div>
+                <a 
+                    href="#"
+                    class="list-group-item list-group-item-action"
+                    data-bs-toggle="modal"
+                    data-bs-target="#add_employee">
+                    Add Employee
+                </a>
+                <a href="employees-list.html" class="list-group-item list-group-item-action">View Employees</a>
+            </div>
+            <div class="list-group shadow-sm small mb-3">
+                <div class="list-group-item active">Related Links</div>
+                <a href="#" class="list-group-item list-group-item-action">Jobs List</a>
+            </div>
+        </div>
+        <div class="col-md-10">
+            <div class="card shadow sm border-0 mb-3">
+                <div class="card-header text-bg-dark text-center">Employees List</div>
+                <table class="table table-sm small table-bordered align-middle mb-0">
+                    <tr class="table-secondary">
+                        <th>ID</th>
+                        <th>Employee ID</th>
+                        <th>Name</th>
+                        <th>Email ID</th>
+                        <th>Details</th>
+                        <th>Edit</th>
+                        <th>Delete</th>
+                    </tr>
+                    <tr>
+                        <th>1</th>
+                        <th>456</th>
+                        <th>John Doe</th>
+                        <th>johndoe@gmail.com</th>
+                        <th>
+                            <div class="d-grid">
+                                <a 
+                                    href="#"
+                                    class="btn btn-sm btn-primary"
+                                    data-bs-toggle="modal"
+                                    data-bs-target="#employee_detail">
+                                    Details
+                                </a>
+                            </div>
+                        </th>
+                        <th>
+                            <div class="d-grid">
+                                <a 
+                                    href="#"
+                                    class="btn btn-sm btn-warning"
+                                    data-bs-toggle="modal"
+                                    data-bs-target="#employee_edit">
+                                    Edit
+                                </a>
+                            </div>
+                        </th>
+                        <th>
+                            <div class="d-grid">
+                                <a 
+                                    href="#"
+                                    class="btn btn-sm btn-danger"
+                                    data-bs-toggle="modal"
+                                    data-bs-target="#employee_delete">
+                                    Delete
+                                </a>
+                            </div>
+                        </th>
+                    </tr>
+                                        <tr>
+                        <th>1</th>
+                        <th>456</th>
+                        <th>John Doe</th>
+                        <th>johndoe@gmail.com</th>
+                        <th>
+                            <div class="d-grid">
+                                <a 
+                                    href="#"
+                                    class="btn btn-sm btn-primary"
+                                    data-bs-toggle="modal"
+                                    data-bs-target="#employee_detail">
+                                    Details
+                                </a>
+                            </div>
+                        </th>
+                        <th>
+                            <div class="d-grid">
+                                <a 
+                                    href="#"
+                                    class="btn btn-sm btn-warning"
+                                    data-bs-toggle="modal"
+                                    data-bs-target="#employee_edit">
+                                    Edit
+                                </a>
+                            </div>
+                        </th>
+                        <th>
+                            <div class="d-grid">
+                                <a 
+                                    href="#"
+                                    class="btn btn-sm btn-danger"
+                                    data-bs-toggle="modal"
+                                    data-bs-target="#employee_delete">
+                                    Delete
+                                </a>
+                            </div>
+                        </th>
+                    </tr>
+                                        <tr>
+                        <th>1</th>
+                        <th>456</th>
+                        <th>John Doe</th>
+                        <th>johndoe@gmail.com</th>
+                        <th>
+                            <div class="d-grid">
+                                <a 
+                                    href="#"
+                                    class="btn btn-sm btn-primary"
+                                    data-bs-toggle="modal"
+                                    data-bs-target="#employee_detail">
+                                    Details
+                                </a>
+                            </div>
+                        </th>
+                        <th>
+                            <div class="d-grid">
+                                <a 
+                                    href="#"
+                                    class="btn btn-sm btn-warning"
+                                    data-bs-toggle="modal"
+                                    data-bs-target="#employee_edit">
+                                    Edit
+                                </a>
+                            </div>
+                        </th>
+                        <th>
+                            <div class="d-grid">
+                                <a 
+                                    href="#"
+                                    class="btn btn-sm btn-danger"
+                                    data-bs-toggle="modal"
+                                    data-bs-target="#employee_delete">
+                                    Delete
+                                </a>
+                            </div>
+                        </th>
+                    </tr>
+                                        <tr>
+                        <th>1</th>
+                        <th>456</th>
+                        <th>John Doe</th>
+                        <th>johndoe@gmail.com</th>
+                        <th>
+                            <div class="d-grid">
+                                <a 
+                                    href="#"
+                                    class="btn btn-sm btn-primary"
+                                    data-bs-toggle="modal"
+                                    data-bs-target="#employee_detail">
+                                    Details
+                                </a>
+                            </div>
+                        </th>
+                        <th>
+                            <div class="d-grid">
+                                <a 
+                                    href="#"
+                                    class="btn btn-sm btn-warning"
+                                    data-bs-toggle="modal"
+                                    data-bs-target="#employee_edit">
+                                    Edit
+                                </a>
+                            </div>
+                        </th>
+                        <th>
+                            <div class="d-grid">
+                                <a 
+                                    href="#"
+                                    class="btn btn-sm btn-danger"
+                                    data-bs-toggle="modal"
+                                    data-bs-target="#employee_delete">
+                                    Delete
+                                </a>
+                            </div>
+                        </th>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+ </div>
+<!-- Employees Data -->
+
+ 
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>   
+</body>
+</html>
