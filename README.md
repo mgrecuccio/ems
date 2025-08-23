@@ -1,40 +1,53 @@
-# Employees Management System (EMS)
+# Employee Management System (EMS)
 
-![License](https://img.shields.io/badge/license-MIT-blue)
+This project is a simple Employee Management System built with HTML, Bootstrap, and CSS. It comprises multiple pages designed to manage employee data efficiently, with interactive modals for adding, viewing, editing, and deleting employee records.
 
-## Introduction
+## Pages Included
 
-Employees Management System (EMS) is a simple, responsive web application developed entirely using HTML and Bootstrap 5.3. It provides an intuitive interface for managing employee information efficiently.
+### 1. `index.html`
+**Description:**  
+The login page providing the login form for the EMS. Insert any username and password to be redirected to the dashboard.
+
+### 2. `dash.html`
+**Description:**  
+The dashboard page providing the main navigation for the EMS. It features a top navigation bar with links to Home, Employees, and Jobs sections, a search bar for quick access, and a power button for logout or exit. This serves as the landing page for the system.
+
+### 3. `employees-list.html`
+**Description:**  
+This page displays a list of employees in a table format. Each employee entry has options to view detailed information, edit, or delete the record via modal dialogs. It also includes side navigation for quick access to employee data and related links.
+
+### 4. `jobs-list.html`
+**Description:**  
+Displays a list of available jobs within the organization. The page provides a straightforward view of job titles along with relevant actions or details, helping manage organizational roles and positions.
+
+---
 
 ## Features
 
-- Add, view, edit, and delete employee records
-- Add, view, edit, and delete job records
-- Responsive design to work seamlessly on desktops, tablets, and smartphones
-- User-friendly interface with Bootstrap components
-- Client-side operation without backend dependencies
+- Responsive layout using Bootstrap 5
+- Employee list with action buttons for details, editing, and deletion
+- Job list for managing organizational roles
+- Modals for adding new employees, viewing details, editing, and deleting records
+- Stylish gradient branding and clean, intuitive interface
 
-## Technologies Used
+## How to Use
 
-- HTML5
-- Bootstrap 5.3
-- CSS (via Bootstrap)
-- JavaScript
+1. Load any page (`index.html`, `dash.html`, `employees-list.html`, `jobs-list.html`) in a web browser.
+2. Use the navigation bar to move between pages.
+3. In `employees-list.html`, click **"Add Employee"** to open the modal for adding new employee details.
+4. Utilize the action buttons (Details, Edit, Delete) in the employee table to perform respective operations via modals.
+5. Navigate to `jobs-list.html` to view and manage job listings.
+3. In `jobs-list.html`, click **"Add Job"** to open the modal for adding new employee details.
+6. Utilize the action buttons (Details, Edit, Delete) in the employee table to perform respective operations via modals.
 
-## Installation
+## Notes
 
-1. Clone the repository:
-   
-   ```bash
-   git clone https://github.com/mgrecuccio/ems.git
-   ```
-2. Open the `index.html` file in your preferred web browser.
+- All interactions are handled via Bootstrap modals; no backend logic is included.
+- For functional data handling, integration with a backend or JavaScript is required.
 
-## Usage
+## Dependencies
 
-- Login annd navigate through the employee list and job list
-- Use forms to add or edit record
-- Delete records as needed
+- Bootstrap 5.3.7 CSS and JS (loaded via CDN)
 
 ## Contributing
 
